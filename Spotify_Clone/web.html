@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <div class="root">
+        <div class="header">
+        </div>
+        <div style="width: 100vw; opacity: 0; height: 40px;"></div>
+        <div class="main">
+            <div class="login">
+                <h1 class="login-text">Log in to Spotify</h1>
+                <button class="google" onclick="location.href='https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&access_type=offline&client_id=1046568431490-ij1gi5shcp2gtorls09frkc56d4mjbe2.apps.googleusercontent.com&state=AQA3%2Bc2l9wBcE5sjWUpOUS%2Bd9%2B0kcHv0tO9H%2BthQt%2BksH1pEroWXFEu0adn6XCAHRrVGtdOZ8Wqa14%2FarMYlPunxnIOyLG8STgngsd9cdRvlp6TXRCnNmP0R50N0IwWVHA%2BhhPEyrJoIOV4yhBBCdGuuCsj6DRILnPT%2FBxSSrWaODnK0430UuUwTUNCQn3Va4500nTbj9mjRkhMsTJQ9Bb%2FcAPP8ZdDTZQVAx%2BFmHKIjUOj4QgmxD59bPoayuB0xopsUIpENSVQDfhcYQu64yKbtDWVSuJHyDMZNy4YDHb7vl6oHNJFkubwAE4k6fjEhWO4Ie1KrFoVN%2BNawZMAeWinRPDtD&scope=profile%20email%20openid&redirect_uri=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Fgoogle%2Fredirect&service=lso&o2v=2&flowName=GeneralOAuthFlow'">Continue with Google</button>
+                <button class="facebook" onclick="location.href='https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=174829003346&params%5Berror_unsupported_step%5D=false&params%5Bis_first_party_account_linking%5D=false&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%2284add40e-eb8b-49ec-acc4-9f6d006484cd%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Faccounts.spotify.com%5C%2Flogin%5C%2Ffacebook%5C%2Fredirect%22&params%5Breturn_scopes%5D=false&params%5Bstate%5D=%22AQDid%2BRcCKa8qLSWV5j5VMJuHPclWZNzkAtoR6kCvrYI%2BQHGwJ1Q5iY47FIMmFlRR4hN0SaW9lWdBV%5C%2FharX2xL7MWPLUda9LZCkiAFaQ7tT87Baua0TKeBFYmT8ObM1kAeO70YA9luygp92bduJ2TQrcZHWg8E40hW1%5C%2FDEUZj50RBqguDpL10NQiXdBI%2B%5C%2FMW53e6r%5C%2F1n3NhLABCSUEH1JvvVbOUA%2BcJ%2BAodYMMqHBM2LP2ZF%2BAzitKaaLIK7xgas3AzUJorGP145X4VR00WqI2wMPUAYj3jVyAgssG5oJAYm1h37mlk0JFrhjzIhcx9Zw1RBLKnyEkPSUH712vNOjnSUPXLj%22&params%5Bsteps%5D=%7B%22read%22%3A%5B%22baseline%22%2C%22public_profile%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22login_platformization_read%22&source=gdp_delegated'">Continue with facebook</button>
+                <button class="apple" onclick="location.href='https://appleid.apple.com/auth/authorize?client_id=com.spotify.accounts&response_type=code&response_mode=form_post&scope=name%20email&state=AQBh0xRdHCU7iRcqaTwbTojkcXpCWxO4odZy%2B463mJkee7TA6oSxgNHaB0N5Ejd96KAVsUv4pLwSkcuxGqAB%2BO1mdWNiQNf5PqxzlZE7d0RLrdaXm%2FtJRCa18M%2Fa0tSMruIZljXDVXeBQqWQDQlHSLkQO8BBnDKLeGd1R%2FuQIkt8x10ARqjxJUQjC3vN1bIlqMN6eRzkfNsAKFpJB88pWjqQVqInzVRkdo7tB%2Fqx6O2iF5b3ETxSr2iAy2fnagSBcjP43l5VKUgaDw%3D%3D&redirect_uri=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Fapple%2Fredirect'">Continue with Apple</button>
+                <button class="phone" onclick="location.href='https://accounts.spotify.com/en/login/phone?continue=https%3A%2F%2Fopen.spotify.com%2F'">Continue with Phone Number</button>
+
+                <hr class="the-line">
+
+                <div class="login-form">
+                    <p class="input-fields">Email or username</p><br>
+                    <input type="text" placeholder="Email or username"><br>
+                    <p class="input-fields">Password</p><br>
+                    <input type="password" placeholder="Password"><br>
+                </div>
+                
+                <div class="login-form">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <p class="remember">Remember me</p>
+                    </label>
+                </div>
+
+            </div>
+            <div class="others login">
+                <button class="submit">Login</button>
+                <a class="forgot"
+                    href="https://accounts.spotify.com/en/password-reset?flow_id=90e9ac88-f7d9-4179-9bee-127a20da14cb%3A1685132771">Forgot your
+                    password?</a>
+
+                <hr class="the-line">
+
+                <p class="end">Don't have an account? <span class="signup" onclick="location.href='https://www.spotify.com/in-en/signup?flow_id=2baeccef-efcf-4f00-92d0-de2ad380fdb6%3A1685132683&forward_url=https%3A%2F%2Fopen.spotify.com%2F%3Fflow_id%3D2baeccef-efcf-4f00-92d0-de2ad380fdb6%253A1685132683'">Sign up for Spotify</span></p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
