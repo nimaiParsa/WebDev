@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueLamp</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <div class="root">
+        <nav>
+            <img src="images/menu.png" class="menu">
+            <img src="images/logo.png" class="logo">
+
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Contemporary</a></li>
+                <li><a href="">Affordable</a></li>
+            </ul>
+
+            <!-- <button type="button" class="btn" onclick="switchOn()" id="button"><span id="round" class="slider"></span></button> -->
+        </nav>
+
+        <div class="lamp-light">
+                <img src="images/lamp.png" class="lamp">
+                <img src="images/light.png" id="light">
+        </div>
+
+
+        <div class="text">
+            <h1>Latest <br> in Lightning</h1>
+            <p>This is the first lamp from our company. We're making a huge collection of modern Lamps in all catagories
+                from home use to office use.</p>
+            <a href="" class="col-link">Check All Collections</a>
+            <div class="control">
+                <span class="material-symbols-outlined">
+                    brightness_low
+                </span>
+                <input type="range" value="70" min="0" max="100" oninput="update()" id="range-slider">
+                <span class="material-symbols-outlined">
+                    brightness_high
+                </span>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
