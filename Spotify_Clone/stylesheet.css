@@ -190,7 +190,7 @@ a:hover {
 }
 
 .signup:hover {
-    text-decoration: underline;
+    color: rgb(86, 208, 118);
 }
 
 .others {
@@ -214,16 +214,13 @@ a:hover {
     margin-top: 20px;
     height: 30px;
     width: 40%;
+    height: auto;
+    width: auto;
+    display: inline-block;
 }
 
 .others {
     height: 300px;
-}
-
-.switch {
-    height: auto;
-    width: auto;
-    display: inline-block;
 }
 
 .slider {
